@@ -38,8 +38,8 @@ public final class TestSetUpController {
 
     private void browserWrapUp() {
         this.device.getDriver().manage().deleteAllCookies();
-        //this.device.getDriver().close();
-        //this.device.getDriver().quit();
+        this.device.getDriver().close();
+        this.device.getDriver().quit();
     }
 
     private void captureScreenshot(Scenario scenario) {
