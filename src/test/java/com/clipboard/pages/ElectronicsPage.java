@@ -16,6 +16,7 @@ public class ElectronicsPage {
     }
 
     public void clickSortByOption(){
+        I.amPerforming().waitFor().waitWithThread(5);
         I.amPerforming().click().on(sortBy);
     }
 
